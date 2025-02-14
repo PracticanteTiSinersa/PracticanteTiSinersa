@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas para Reunión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plana de preguntas para las Áreas encargadas</h1>
+
+        <!-- Sección de Preguntas Generales -->
+        <div class="section">
+            <h2>Preguntas Generales para Todas las Áreas</h2>
+            <div class="question" onclick="toggleExplanation('exp1')">
+                <p>1. ¿Cuáles son las tareas más repetitivas o que consumen más tiempo en su día a día?</p>
+            </div>
+            <div id="exp1" class="explanation">
+                <p>Explicación: Conocer las tareas repetitivas o que consumen mucho tiempo nos permitirá identificar áreas específicas donde el ChatBot puede ahorrar tiempo y recursos, automatizando esas actividades.</p>
+                <p><strong>Ejemplo:</strong> En el área administrativa, podría ser la revisión constante de documentos similares. En contabilidad, la validación de datos de informes o cálculos repetitivos.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp2')">
+                <p>2. ¿Qué tipo de consultas o reportes suelen necesitar con mayor frecuencia?</p>
+            </div>
+            <div id="exp2" class="explanation">
+                <p>Explicación: Esta información ayudará a priorizar qué reportes o datos debe poder generar el ChatBot, para asegurar que sea útil en su trabajo diario y aporte valor desde el inicio.</p>
+                <p><strong>Ejemplo:</strong> En administración, podría ser la consulta sobre el estado de órdenes de compra. En RRHH, reportes sobre ausencias o fechas de vencimiento de contratos.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp3')">
+                <p>3. ¿En qué casos creen que un ChatBot les ayudaría a agilizar su trabajo?</p>
+            </div>
+            <div id="exp3" class="explanation">
+                <p>Explicación: Al entender los casos específicos donde el ChatBot podría ser más útil, podemos diseñar interacciones más eficientes y orientadas a resolver los problemas reales de los usuarios.</p>
+                <p><strong>Ejemplo:</strong> En contabilidad, un ChatBot podría agilizar la consulta de datos contables o generar reportes financieros automáticos.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp4')">
+                <p>4. ¿Existen procesos manuales que podrían automatizarse con IA?</p>
+            </div>
+            <div id="exp4" class="explanation">
+                <p>Explicación: La automatización es clave para mejorar la eficiencia. Con esta pregunta buscamos identificar flujos de trabajo manuales que puedan beneficiarse de la implementación de un modelo de IA.</p>
+                <p><strong>Ejemplo:</strong> En RRHH, el proceso de registrar permisos de los empleados. En administración, la validación manual de documentos o informes de compras.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp5')">
+                <p>5. ¿Qué nivel de interacción prefieren con el ChatBot? (Ejemplo: consultas rápidas, generación de reportes detallados, validación de datos, etc.)</p>
+            </div>
+            <div id="exp5" class="explanation">
+                <p>Explicación: Esto nos ayudará a definir la complejidad y el alcance de las interacciones que los usuarios tendrán con el ChatBot. Algunos usuarios prefieren respuestas rápidas, otros requieren interacciones más complejas.</p>
+                <p><strong>Ejemplo:</strong> En contabilidad, puede ser la necesidad de un reporte financiero básico vs. una validación más profunda de los datos.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Preguntas Específicas para el Área Administrativa -->
+        <div class="section">
+            <h2>Preguntas Específicas para el Área Administrativa</h2>
+            <div class="question" onclick="toggleExplanation('exp6')">
+                <p>1. ¿Qué documentos suelen revisar con más frecuencia? (Ejemplo: contratos, órdenes de compra, informes internos)</p>
+            </div>
+            <div id="exp6" class="explanation">
+                <p>Explicación: Con esta información podemos ajustar el ChatBot para priorizar los tipos de documentos más relevantes para el área administrativa y asegurarnos de que el sistema sea eficiente en su búsqueda y análisis.</p>
+                <p><strong>Ejemplo:</strong> Contratos de proveedores, órdenes de compra, o informes de proyectos.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp7')">
+                <p>2. ¿Necesitan que el ChatBot extraiga información específica de documentos? Si es así, ¿qué tipo de información?</p>
+            </div>
+            <div id="exp7" class="explanation">
+                <p>Explicación: Esto ayudará a configurar el modelo de lenguaje para que sea capaz de extraer solo la información relevante (como fechas, nombres, montos, etc.), optimizando el tiempo de los usuarios.</p>
+                <p><strong>Ejemplo:</strong> Fechas de vencimiento de contratos, montos de facturación o condiciones específicas en órdenes de compra.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp8')">
+                <p>3. ¿Cómo manejan actualmente la búsqueda y organización de documentos dentro de la empresa?</p>
+            </div>
+            <div id="exp8" class="explanation">
+                <p>Explicación: Saber cómo se gestionan los documentos actualmente nos permitirá entender los puntos débiles del proceso y cómo el ChatBot podría mejorar la eficiencia y facilitar la búsqueda de documentos.</p>
+                <p><strong>Ejemplo:</strong> A través de carpetas digitales compartidas o bases de datos internas.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp9')">
+                <p>4. ¿Tienen flujos de aprobación de documentos o solicitudes que podrían optimizarse con IA?</p>
+            </div>
+            <div id="exp9" class="explanation">
+                <p>Explicación: Esto es clave para entender si el ChatBot puede ser parte de un flujo de trabajo más grande (como aprobaciones o validaciones) y cómo puede automatizar tareas administrativas importantes.</p>
+                <p><strong>Ejemplo:</strong> Solicitudes de compras, aprobación de contratos, etc.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp10')">
+                <p>5. ¿El ChatBot debería integrarse con algún sistema que ya usan en el área administrativa?</p>
+            </div>
+            <div id="exp10" class="explanation">
+                <p>Explicación: Si ya usan sistemas o plataformas específicas, integrar el ChatBot con esos sistemas permitirá un flujo de trabajo más eficiente y evitará duplicaciones o errores al tener que introducir los mismos datos en varios lugares.</p>
+                <p><strong>Ejemplo:</strong> Sistemas de gestión documental, ERP de la empresa, etc.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Preguntas Específicas para el Área Contable -->
+        <div class="section">
+            <h2>Preguntas Específicas para el Área Contable</h2>
+            <div class="question" onclick="toggleExplanation('exp11')">
+                <p>1. ¿Qué tipo de reportes contables generan regularmente?</p>
+            </div>
+            <div id="exp11" class="explanation">
+                <p>Explicación: Esta información es esencial para saber qué reportes el ChatBot debe ser capaz de generar automáticamente, facilitando el trabajo contable al evitar tareas repetitivas y ayudando a la toma de decisiones.</p>
+                <p><strong>Ejemplo:</strong> Reportes de flujo de caja, informes de impuestos, balances financieros.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp12')">
+                <p>2. ¿Cómo consultan actualmente la información contable? ¿Cuáles son los datos clave que necesitan analizar con frecuencia?</p>
+            </div>
+            <div id="exp12" class="explanation">
+                <p>Explicación: Esto nos ayudará a optimizar las respuestas del ChatBot para proporcionar datos financieros rápidamente y en el formato adecuado.</p>
+                <p><strong>Ejemplo:</strong> A través de hojas de cálculo o informes generados a mano.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp13')">
+                <p>3. ¿El ChatBot debería generar resúmenes de documentos contables o validar la información financiera?</p>
+            </div>
+            <div id="exp13" class="explanation">
+                <p>Explicación: Esta información nos permitirá ajustar las capacidades del ChatBot para realizar validaciones o resúmenes, además de la extracción de datos.</p>
+                <p><strong>Ejemplo:</strong> Validar montos de facturas o generar resúmenes de informes de ingresos y gastos.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp14')">
+                <p>4. ¿Manejan formatos estandarizados de documentos contables que el ChatBot debería entender?</p>
+            </div>
+            <div id="exp14" class="explanation">
+                <p>Explicación: La estandarización facilitará el entrenamiento del ChatBot para que pueda interpretar los documentos correctamente, mejorando la precisión y velocidad de las respuestas.</p>
+                <p><strong>Ejemplo:</strong> Plantillas de balance general o informes de cuentas por cobrar.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp15')">
+                <p>5. ¿Qué desafíos enfrentan actualmente en la gestión de la información financiera que el ChatBot podría ayudar a resolver?</p>
+            </div>
+            <div id="exp15" class="explanation">
+                <p>Explicación: Al identificar los puntos débiles, podemos ajustar el ChatBot para que aborde esos problemas específicos, mejorando la eficiencia del área contable.</p>
+                <p><strong>Ejemplo:</strong> El tiempo que lleva consolidar los informes o la dificultad para encontrar información financiera precisa.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Preguntas Específicas para el Área de Recursos Humanos -->
+        <div class="section">
+            <h2>Preguntas Específicas para el Área de Recursos Humanos</h2>
+            <div class="question" onclick="toggleExplanation('exp16')">
+                <p>1. ¿Qué tipos de documentos o registros gestionan más frecuentemente? (Ejemplo: contratos laborales, hojas de asistencia, evaluaciones de desempeño, etc.)</p>
+            </div>
+            <div id="exp16" class="explanation">
+                <p>Explicación: Conocer estos documentos nos permitirá enseñar al ChatBot a extraer y analizar la información más relevante para RRHH.</p>
+                <p><strong>Ejemplo:</strong> Contratos laborales, hojas de asistencia, informes de evaluación de desempeño.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp17')">
+                <p>2. ¿El ChatBot debería gestionar solicitudes o registros de empleados, como solicitudes de vacaciones, permisos o documentos requeridos?</p>
+            </div>
+            <div id="exp17" class="explanation">
+                <p>Explicación: Esto permitirá integrar funciones de gestión de solicitudes, lo que facilitará la tarea del personal de RRHH al automatizar ciertos flujos administrativos.</p>
+                <p><strong>Ejemplo:</strong> Solicitudes de vacaciones, permisos de trabajo, o registros de ausencias.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp18')">
+                <p>3. ¿El ChatBot debería hacer seguimiento de indicadores clave de RRHH, como ausencias, rotación de personal, o desempeño?</p>
+            </div>
+            <div id="exp18" class="explanation">
+                <p>Explicación: Si el ChatBot puede generar reportes o hacer seguimiento de estos indicadores, facilitará la toma de decisiones basada en datos.</p>
+                <p><strong>Ejemplo:</strong> Monitorear la tasa de ausentismo, rotación de personal, o el desempeño de los empleados en proyectos.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp19')">
+                <p>4. ¿Cuáles son los procesos internos que consideran más tediosos o que podrían beneficiarse de la automatización con IA?</p>
+            </div>
+            <div id="exp19" class="explanation">
+                <p>Explicación: Identificar estos procesos nos permitirá diseñar el ChatBot para que aborde las áreas más críticas, como la gestión de personal o la administración de tareas repetitivas.</p>
+                <p><strong>Ejemplo:</strong> El proceso de reclutamiento, seguimiento de asistencia o actualización de registros de empleados.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp20')">
+                <p>5. ¿El ChatBot debería generar reportes sobre el desempeño del personal o el cumplimiento de objetivos?</p>
+            </div>
+            <div id="exp20" class="explanation">
+                <p>Explicación: Esta pregunta nos permitirá saber si el ChatBot debe generar estos reportes automáticamente, liberando tiempo al personal de RRHH.</p>
+                <p><strong>Ejemplo:</strong> Reportes mensuales sobre asistencia, objetivos cumplidos o evaluaciones de desempeño.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp21')">
+                <p>6. ¿En qué otras áreas del ciclo de vida del empleado (reclutamiento, onboarding, formación, desvinculación) creen que el ChatBot podría ser útil?</p>
+            </div>
+            <div id="exp21" class="explanation">
+                <p>Explicación: Conocer estas áreas nos ayudará a diseñar un ChatBot que pueda asistir en el reclutamiento, onboarding y otros procesos clave de RRHH.</p>
+                <p><strong>Ejemplo:</strong> Automatizar respuestas a preguntas frecuentes durante el proceso de onboarding o gestionar solicitudes de formación.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp22')">
+                <p>7. ¿Qué sistemas utilizan actualmente para gestionar la información de los empleados? ¿El ChatBot debería integrarse con alguno de estos sistemas?</p>
+            </div>
+            <div id="exp22" class="explanation">
+                <p>Explicación: Integrar el ChatBot con las herramientas actuales optimizará los flujos de trabajo y evitará duplicaciones de esfuerzo.</p>
+                <p><strong>Ejemplo:</strong> Integración con plataformas de gestión de recursos humanos, como SAP o sistemas internos de gestión de empleados.</p>
+            </div>
+
+            <div class="question" onclick="toggleExplanation('exp23')">
+                <p>8. ¿Les gustaría que el ChatBot interactuara directamente con los empleados para responder a preguntas comunes sobre beneficios, políticas internas, etc.?</p>
+            </div>
+            <div id="exp23" class="explanation">
+                <p>Explicación: Esta interacción podría liberar tiempo al equipo de RRHH, al mismo tiempo que mejora la experiencia del empleado.</p>
+                <p><strong>Ejemplo:</strong> Responder a preguntas sobre beneficios, vacaciones, o procedimientos internos como el proceso de solicitud de permisos.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
