@@ -1,66 +1,82 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-    padding-top: 20px;
+    color: #333; /* Color de texto oscuro para contraste */
 }
 
 /* Contenedor principal */
 .container {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+    border-radius: 10px;
+    padding: 30px;
     width: 80%;
-    max-width: 800px;
+    max-width: 900px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenedor */
 }
 
 /* Títulos */
 h1 {
     text-align: center;
-    color: #333;
+    font-size: 2.5em;
+    color: #2575fc;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 h2 {
     margin-top: 20px;
     color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 /* Estilo de las preguntas */
 .question {
-    background-color: #e7f5ff;
-    margin: 10px 0;
+    background-color: #e1f5fe; /* Fondo claro para las preguntas */
+    margin: 15px 0;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .question:hover {
-    background-color: #d1e8ff;
+    background-color: #b3e5fc; /* Color de fondo cuando pasa el ratón */
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
 }
 
 .question p {
     margin: 0;
-    color: #007bff;
-    font-weight: bold;
+    color: #0077b6;
+    font-weight: 600;
 }
 
 /* Estilo de la explicación */
 .explanation {
     display: none;
-    background-color: #f0f8ff;
+    background-color: #f1f8ff;
     margin-top: 10px;
     padding: 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #555;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #333;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.explanation p {
+    margin: 10px 0;
+}
+
+.explanation strong {
+    color: #2575fc;
 }
 
 /* Estilos para mostrar la explicación */
@@ -68,7 +84,42 @@ h2 {
     display: block;
 }
 
-.explanation p {
-    margin: 0;
-    font-size: 14px;
+/* Estilo del botón de enlace (para el formulario) */
+.button-link {
+    display: inline-block;
+    background-color: #2575fc;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
+
+.button-link:hover {
+    background-color: #1d5ab2;
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.button-link:active {
+    background-color: #1a4593;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
